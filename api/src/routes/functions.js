@@ -27,7 +27,7 @@ const getPokemonsApi = async () => {
             .then(response => response.json())
             return {
                 id: pokemon.id,
-                name: pokemon.name,
+                name: pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1),
                 hp: pokemon.stats[0].base_stat,
                 attack: pokemon.stats[1].base_stat,
                 defense: pokemon.stats[2].base_stat,
@@ -35,7 +35,7 @@ const getPokemonsApi = async () => {
                 height: pokemon.height,
                 weight: pokemon.weight,
                 img: pokemon.sprites.other.dream_world.front_default,
-                type: pokemon.types.map(t => t.type.name),
+                types: pokemon.types.map(t => {return t.type.name.charAt(0).toUpperCase()+t.type.name.slice(1)}),
                 origin: 'api'
             }
         }))
@@ -81,15 +81,12 @@ const getPokemonByName = async (name) => {
 const getPokemonById = async (id) => {
     let pokemons
     let findPokemon
-    console.log(id)
     if(isNaN(id)) {
         pokemons = await getPokemonsDB()
         findPokemon = await pokemons.find( p => p.id === id)
-        console.log('entro 1')
     } else {
         pokemons = await getPokemonsApi()
         findPokemon = await pokemons.find( p => p.id === parseInt(id))
-        console.log('entro 2')
     }
     return findPokemon
 }
@@ -99,5 +96,5 @@ module.exports = {
     getPokemonsDB,
     getAllPokemon,
     getPokemonByName,
-    getPokemonById
+    getPokemonById,
 }

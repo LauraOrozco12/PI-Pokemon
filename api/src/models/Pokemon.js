@@ -22,26 +22,29 @@ module.exports = (sequelize) => {
       }
     },
     hp: {
-      type: DataTypes.INTEGER
+      type: DataTypes.STRING
     },
     attack:{
-      type: DataTypes.INTEGER
+      type: DataTypes.STRING
     },
     defense:{
-      type: DataTypes.INTEGER
+      type: DataTypes.STRING
     },
     speed:{
-      type: DataTypes.INTEGER
+      type: DataTypes.STRING
     },
     height:{
-      type: DataTypes.INTEGER
+      type: DataTypes.STRING
     },
     weight:{
-      type: DataTypes.INTEGER
+      type: DataTypes.STRING
+    },
+    img: {
+      type: DataTypes.STRING
     },
     origin: {
       type: DataTypes.STRING,
-      defaultValue: 'Database'
+      defaultValue: 'database'
     }
   },
   {

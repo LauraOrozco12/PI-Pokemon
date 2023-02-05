@@ -2,28 +2,23 @@ const { Router } = require('express');
 // Importar todos los routers;
 // Ejemplo: const authRouter = require('./auth.js');
 const {Pokemon, Type} = require('../db.js');
-const {getAllPokemon, getPokemonByName, getPokemonById } = require('./functions')
+const {getAllPokemon, getPokemonByName, getPokemonById} = require('./functions')
 
 const fetch = require('node-fetch')
 const url = 'https://pokeapi.co/api/v2/'
 
 const router = Router();
 
-let pokemonsAPI
-fetch(url+'pokemon?offset=0&limit=40')
-    .then(response => response.json())
-    .then(data => pokemonsAPI = data.results)
-
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 router.post('/pokemons', async (req, res) => {
-    const { name, hp, attack, defense, speed, height, weight, img, type} = req.body
+    const { name, hp, attack, defense, speed, height, weight, img, types} = req.body
     try {
         const newPokemon = await Pokemon.create({
             name, hp, attack, defense, speed, height, weight, img
         })
         const findType = await Type.findAll({
-             where: {id: type}
+             where: {name: types}
         })
         await newPokemon.addType(findType)
         const pokemon = await Pokemon.findOne({
@@ -70,16 +65,14 @@ router.get('/pokemons/:id', async (req, res) => {
     }
 })
 
-router.get('/types', async (req, res) => {
+router.post('/types', async (req, res) => {
     try {
         const response = await fetch(url+'type')
                                .then(response => response.json())
         const typesAPI = response.results.map( t => {
             return {
-                id: t.url.split('/')[6],
-                name: t.name,
-                }}
-            )
+                name: t.name
+            }})
         await Type.bulkCreate(typesAPI);
         const allTypes = await Type.findAll()
         res.json(allTypes)
@@ -88,5 +81,13 @@ router.get('/types', async (req, res) => {
     }
 })
 
+router.get('/types', async (req, res) => {
+    try {
+        const allTypes = await Type.findAll()
+        res.json(allTypes)
+    } catch (e) {
+        console.log(e)
+    }
+})
 
 module.exports = router;
