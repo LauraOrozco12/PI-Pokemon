@@ -1,0 +1,127 @@
+.bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('http://localhost:3000/Background/BackgroundLanding.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 30%;
+    min-height: 100vh;
+}
+
+.imgPokemon {
+    margin: 5px;
+    height: 25vh;
+}
+
+.imgPokemon img {
+    height: 100%;
+    padding: 5px
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.divPikachu {
+    flex: 33%;
+    text-align: center;
+}
+
+.pikachu {
+    height: 60vh;
+    margin: 10px
+}
+
+.divLaura {
+    flex: 33%;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.laura {
+    height: 5vh;
+}
+
+.button {
+    flex: 33%;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.btn {
+    width: 10vw;
+    height: 7vh;
+    background-color: #FFCB05;
+    border: 3px solid #3367B0;
+    border-radius: 10px;
+    color: #3367B0;
+    font-weight: bold;
+    font-size: larger;
+    
+}
+
+.btn:hover {
+    background-color: #3367B0;
+    border: 3px solid #FFCB05;
+    color: white;
+}
+
+.parpadea {
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}

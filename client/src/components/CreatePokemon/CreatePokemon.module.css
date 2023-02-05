@@ -1,0 +1,123 @@
+.wrapper{
+    display: flex;
+    min-height: 100vh;
+    background-image: url('http://localhost:3000/Background/backgroundCreate.png');
+    background-repeat: no-repeat;
+    background-position: center left -140px;
+    background-attachment: fixed;
+    justify-content: space-around;
+}
+
+.columnOne{
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.back{
+    background-color: #7b368b;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    width: 100px;
+    margin: 10px;
+}
+
+.arrow{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+} 
+
+.back:hover {
+    background-color: #572662;
+    box-shadow: 0 0 5px #572662;
+}
+
+.divProfesor{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.profesor{
+    height: 90vh;
+    width: 65vh;
+}
+
+.formDiv{
+    flex: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.formColumns{
+    display: flex;
+    column-gap: 20px;
+}
+
+.inputText, select{
+    width: 100%;
+    padding: 5px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit{
+    width: 100%;
+    background-color: #7b368b;
+    color: white;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.submit:hover {
+    background-color: #572662;
+    box-shadow: 0 0 5px #572662;
+}
+
+.label{
+    height: 20px;
+    margin: 1px;
+    font-size: 15px;
+}
+
+.error{
+    margin: 0px;
+    color: red;
+    font-size: 10px;
+}
+
+.types{
+    display: flex;
+    margin: 5px
+}
+
+.types p{
+    margin: 5px;
+}
+
+.types button{
+    border: none;
+    color: red;
+    margin: 2px;
+    padding: 0px 6px;
+}
+
+.types button:hover{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}

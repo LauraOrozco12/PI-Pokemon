@@ -1,0 +1,158 @@
+.name{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(72, 72, 72);
+}
+
+.imgPokemon{
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+}
+
+.pokemonCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 135px;
+    margin: 12px 8px;
+    padding-top: 5px;
+    border: 2px solid rgba(114, 114, 114, 0.5);
+    background-color: rgba(255, 254, 254, 0.5);
+    border-radius: 20px;
+}
+
+.pokemonCard:hover{
+    background-color: rgba(255, 254, 254, 0.6);
+    border: 2px solid rgb(115, 115, 115);
+    box-shadow: 0 0 20px rgb(115, 115, 115);
+}
+
+.typeCard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.typeText{
+    margin: 0px 0px 5px 0px;
+    font-size: 11px;
+}
+
+.type{
+    margin: 0px 10px 0px 10px;
+}
+
+.imgType{
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+}
+
+.imgType img{   
+    height: 60%;
+    width: 60%;
+    margin: 20%;
+}
+
+.linkCard:hover {
+    text-decoration: none;
+    color:black;
+  }
+  
+.linkCard {
+    color:black;
+  }
+
+.bug{
+    background: #92BC2C;
+    box-shadow: 0 0 20px #92BC2C;
+}
+
+.dark {
+    background: #595761;
+    box-shadow: 0 0 20px #595761;
+}
+
+.dragon {
+    background: #0C69C8;
+    box-shadow: 0 0 20px #0C69C8;
+}
+
+.electric {
+    background: #F2D94E;
+    box-shadow: 0 0 20px #F2D94E;
+}
+
+.fire {
+    background: #FBA54C;
+    box-shadow: 0 0 20px #FBA54C;
+}
+
+.fairy {
+    background: #EE90E6;
+    box-shadow: 0 0 20px #EE90E6;
+}
+
+.fighting {
+    background: #D3425F;
+    box-shadow: 0 0 20px #D3425F;
+}
+
+.flying {
+    background: #A1BBEC;
+    box-shadow: 0 0 20px #A1BBEC;
+}
+
+.ghost {
+    background: #5F6DBC;
+    box-shadow: 0 0 20px #5F6DBC;
+}
+
+.grass {
+    background: #5FBD58;
+    box-shadow: 0 0 20px #5FBD58;
+}
+
+.ground {
+    background: #DA7C4D;
+    box-shadow: 0 0 20px #DA7C4D;
+}
+
+.ice {
+    background: #75D0C1;
+    box-shadow: 0 0 20px #75D0C1;
+}
+
+.normal {
+    background: #A0A29F;
+    box-shadow: 0 0 20px #A0A29F;
+}
+
+.poison {
+    background: #B763CF;
+    box-shadow: 0 0 20px #B763CF;
+}
+
+.psychic {
+    background: #FA8581;
+    box-shadow: 0 0 20px #FA8581;
+}
+
+.rock {
+    background: #C9BB8A;
+    box-shadow: 0 0 20px #C9BB8A;
+}
+
+.steel {
+    background: #5695A3;
+    box-shadow: 0 0 20px #5695A3;
+}
+
+.water {
+    background: #539DDF;
+    box-shadow: 0 0 20px #539DDF;
+}

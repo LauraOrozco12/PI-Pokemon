@@ -1,0 +1,290 @@
+.wrapper{
+    display: flex;
+    min-height: 100vh;
+}
+
+.columnOne{
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+    /* align-items: center; */
+    background-color: whitesmoke;
+    padding: 0px 10px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.back{
+    background-color: #7b368b;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    width: 100px;
+    margin: 10px;
+}
+
+.back:hover {
+    background-color: #572662;
+    box-shadow: 0 0 5px #572662;
+}
+
+.arrow{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+} 
+
+.typeWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    border: solid 1px rgb(184, 184, 184);
+    margin: 5px 0px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 7px 1vw;
+    border-bottom: solid 1px rgb(184, 184, 184);
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.h4{
+    margin: 5px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.typeCard{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.type{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    height: 100%;
+    justify-content: center;
+}
+
+.type p{
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.imgType{
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+    margin: auto;
+}
+
+.imgType img{   
+    height: 60%;
+    width: 60%;
+    margin: 20%;
+}
+
+.stats{
+    margin: 15px 0px 0px 0px;
+    display: flex;
+    width: 100%;
+    height: 100%
+}
+
+.statsOne{
+    flex: 35%;
+    margin: 5px;
+}
+
+.statsTwo{
+    flex: 65%;
+    text-align: start;
+}
+
+.p{
+    margin: 5px 0px 5px 15px;
+    font-weight: 600;
+    font-size: 15px;
+    height: 30px;
+}
+
+.progress{
+	border-radius: 20px;
+	overflow: hidden;
+	border: none;
+	width: 85%;
+	height: 12px;
+    margin: 9px 0px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(218, 218, 218);
+}
+
+progress::-webkit-progress-value {
+    background: #7b368b;
+    border-radius: 20px;
+}
+
+.measures{
+    display: flex;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.measureCard{
+    margin: 10px 20px;
+}
+
+.text{
+    font-weight: 600;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.columnTwo{
+    display: flex;
+    flex-direction: column;
+    flex: 70%;
+    background-image: url('http://localhost:3000/Background/backgroundDetail.png');
+    background-repeat: no-repeat;
+    background-position: top -50px right -140px;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.columnTwo img{
+    width: 45%;
+    height: 45%;
+    /* box-shadow: 0px 10px gray; */
+    filter: drop-shadow(-15px 15px 4px gray)
+}
+
+.columnTwo p{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10vh;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+/* loading */
+.loading{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Types img */
+.bug{
+    background: #92BC2C;
+    box-shadow: 0 0 20px #92BC2C;
+}
+
+.dark {
+    background: #595761;
+    box-shadow: 0 0 20px #595761;
+}
+
+.dragon {
+    background: #0C69C8;
+    box-shadow: 0 0 20px #0C69C8;
+}
+
+.electric {
+    background: #F2D94E;
+    box-shadow: 0 0 20px #F2D94E;
+}
+
+.fire {
+    background: #FBA54C;
+    box-shadow: 0 0 20px #FBA54C;
+}
+
+.fairy {
+    background: #EE90E6;
+    box-shadow: 0 0 20px #EE90E6;
+}
+
+.fighting {
+    background: #D3425F;
+    box-shadow: 0 0 20px #D3425F;
+}
+
+.flying {
+    background: #A1BBEC;
+    box-shadow: 0 0 20px #A1BBEC;
+}
+
+.ghost {
+    background: #5F6DBC;
+    box-shadow: 0 0 20px #5F6DBC;
+}
+
+.grass {
+    background: #5FBD58;
+    box-shadow: 0 0 20px #5FBD58;
+}
+
+.ground {
+    background: #DA7C4D;
+    box-shadow: 0 0 20px #DA7C4D;
+}
+
+.ice {
+    background: #75D0C1;
+    box-shadow: 0 0 20px #75D0C1;
+}
+
+.normal {
+    background: #A0A29F;
+    box-shadow: 0 0 20px #A0A29F;
+}
+
+.poison {
+    background: #B763CF;
+    box-shadow: 0 0 20px #B763CF;
+}
+
+.psychic {
+    background: #FA8581;
+    box-shadow: 0 0 20px #FA8581;
+}
+
+.rock {
+    background: #C9BB8A;
+    box-shadow: 0 0 20px #C9BB8A;
+}
+
+.steel {
+    background: #5695A3;
+    box-shadow: 0 0 20px #5695A3;
+}
+
+.water {
+    background: #539DDF;
+    box-shadow: 0 0 20px #539DDF;
+}

@@ -1,0 +1,125 @@
+.home{
+    display: flex;
+    min-height: 100vh;
+    /* background-image: url('http://localhost:3000/backgroundHome.jpg'); */
+}
+
+.pokeball{
+    width: 20%;
+    margin: 10px 0px;
+}
+
+.home p{
+    font-weight: 700;
+    font-size: 24px;
+    height: 20px
+}
+
+.columnOne{
+    display: flex;
+    flex-direction: column;
+    flex: 25%;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 5px;
+    min-height: 100vh;
+}
+
+.toggle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: solid 0.5px rgb(184, 184, 184);
+    background-color: rgb(213, 213, 213);
+    margin-bottom: 10px;
+}
+
+.buttonsToggle{
+    display: flex;
+    width: 100%;
+    border: solid 0.5px rgb(184, 184, 184);
+    margin-bottom: 10px;
+}
+
+.buttonToggle{
+    flex: 90%;
+    border: none;
+    padding: 5px 0px;
+}
+
+.buttonTogglePlus{
+    flex: 10%;
+    border: none;
+}
+
+.ulDiv{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.buttonsToggle:hover{
+    border: solid 0.5px purple;
+    box-shadow: 0 0 3px purple
+}
+
+.btnCreate {
+    background-color: #7b368b;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.btnCreate:hover {
+    background-color: #572662;
+    box-shadow: 0 0 5px #572662;
+}
+
+.btnClear {
+    background-color: #7b368b;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.btnClear:hover {
+    background-color: #572662;
+    box-shadow: 0 0 5px #572662;
+}
+
+.columnTwo{
+    display: flex;
+    flex: 75%;
+    background-image: url('http://localhost:3000/Background/pokeballGray.png');
+    background-repeat: no-repeat;
+    background-position: center right -140px;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
